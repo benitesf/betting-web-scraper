@@ -1,0 +1,6 @@
+scraper:
+    url: 
+    waiting_times:    
+        IMPLICITLY_WAIT: 3
+        WAIT_WHEN_SCROLLING: 0.3
+        WAIT_TO_LOCATE_ELEMNT: 0.2
