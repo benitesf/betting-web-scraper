@@ -1,0 +1,800 @@
+{
+    "Goles": {
+        "Total de goles": {
+            "más de 0.5": "1.02",
+            "menos de 0.5": "15.00",
+            "más de 1.5": "1.20",
+            "menos de 1.5": "4.10",
+            "más de 3.5": "2.73",
+            "menos de 3.5": "1.41",
+            "más de 4.5": "4.90",
+            "menos de 4.5": "1.15"
+        },
+        "1er tiempo - Total de goles": {
+            "más de 0.5": "1.33",
+            "menos de 0.5": "3.30",
+            "más de 1.5": "2.50",
+            "menos de 1.5": "1.50",
+            "más de 2.5": "6.00",
+            "menos de 2.5": "1.11",
+            "más de 3.5": "17.00",
+            "menos de 3.5": "-"
+        },
+        "Local - Total de goles": {
+            "más de 0.5": "1.11",
+            "menos de 0.5": "6.50",
+            "más de 1.5": "1.57",
+            "menos de 1.5": "2.30",
+            "más de 2.5": "2.80",
+            "menos de 2.5": "1.40"
+        },
+        "VIsitante - Total de goles": {
+            "más de 0.5": "1.57",
+            "menos de 0.5": "2.40",
+            "más de 1.5": "3.60",
+            "menos de 1.5": "1.25",
+            "más de 2.5": "11.00",
+            "menos de 2.5": "1.03"
+        },
+        "Primer equipo en anotar 2 goles": {
+            "Grêmio": "1.75",
+            "Goiás": "5.50",
+            "No habra": "2.95"
+        },
+        "Primer equipo en anotar 3 goles": {
+            "Grêmio": "2.90",
+            "Goiás": "15.00",
+            "No habra": "1.47"
+        },
+        "Gol en ambos tiempos": {
+            "Sí": "1.62",
+            "No": "2.20"
+        },
+        "Equipo que anota el gol 1": {
+            "Grêmio": "1.45",
+            "Goiás": "3.00",
+            "No habrá": "15.00"
+        },
+        "2do tiempo - Total de goles": {
+            "más de 0.5": "1.18",
+            "menos de 0.5": "4.50",
+            "más de 1.5": "1.90",
+            "menos de 1.5": "1.83",
+            "más de 2.5": "4.00",
+            "menos de 2.5": "1.22",
+            "más de 3.5": "8.50",
+            "menos de 3.5": "1.05",
+            "más de 4.5": "17.00",
+            "menos de 4.5": "-"
+        },
+        "Ganador del primer tiempo + 1er tiempo Total de goles 1.5": {
+            "Local y Más": "4.33",
+            "Empate y Más": "7.50",
+            "Visita y Más": "17.00",
+            "Local y Menos": "3.75",
+            "Empate y Menos": "3.30",
+            "Visita y Menos": "8.00"
+        },
+        "Ganador del primer tiempo + 1er tiempo Total de goles 2.5": {
+            "Local y Más": "8.00",
+            "Empate y Más": "67.00",
+            "Visita y Más": "29.00",
+            "Local y Menos": "2.65",
+            "Empate y Menos": "2.45",
+            "Visita y Menos": "6.50"
+        },
+        "Ganador del primer tiempo + 1er tiempo Total de goles 3.5": {
+            "Local y Más": "29.00",
+            "Empate y Más": "67.00",
+            "Visita y Más": "126.00",
+            "Local y Menos": "2.15",
+            "Empate y Menos": "2.45",
+            "Visita y Menos": "5.50"
+        },
+        "Ganador del partido + Total de goles 1.5": {
+            "Local y Más": "1.83",
+            "Empate y Más": "5.50",
+            "Visita y Más": "7.50",
+            "Local y Menos": "7.50",
+            "Empate y Menos": "15.00",
+            "Visita y Menos": "17.00"
+        },
+        "Ganador del partido + Total de goles 2.5": {
+            "Local y Más": "2.25",
+            "Empate y Más": "13.00",
+            "Visita y Más": "9.00",
+            "Local y Menos": "4.00",
+            "Empate y Menos": "5.50",
+            "Visita y Menos": "12.00"
+        },
+        "Ganador del partido + Total de goles 3.5": {
+            "Local y Más": "3.75",
+            "Empate y Más": "13.00",
+            "Visita y Más": "19.00",
+            "Local y Menos": "2.35",
+            "Empate y Menos": "5.50",
+            "Visita y Menos": "7.00"
+        },
+        "Ambos equipos anotan + Total de goles 1.5": {
+            "Sí y más de": "1.78",
+            "Sí y menos de": "-",
+            "No y Más de": "3.50",
+            "No y Menos de": "4.20"
+        },
+        "Ambos equipos anotan + Total de goles 2.5": {
+            "Sí y más de": "2.15",
+            "Sí y menos de": "8.00",
+            "No y Más de": "6.50",
+            "No y Menos de": "2.70"
+        },
+        "Hándicap -1.5 + Más /Menos de 2.5 goles": {
+            "Local y Más de": "3.50",
+            "Local y Menos de": "7.50",
+            "Visitante y Más de": "3.10",
+            "Visitante y Menos de": "2.85"
+        },
+        "¿Cuándo se anotará el gol 1?": {
+            "1er tiempo": "1.33",
+            "2do tiempo": "3.75",
+            "No habrá": "15.00"
+        },
+        "¿Cuándo se anotará el gol 2?": {
+            "1er tiempo": "2.50",
+            "2do tiempo": "2.20",
+            "No habrá": "4.20"
+        },
+        "¿Cuándo se anotará el gol 3?": {
+            "1er tiempo": "6.00",
+            "2do tiempo": "2.20",
+            "No habrá": "2.10"
+        },
+        "¿Cuándo se anotará el gol 4?": {
+            "1er tiempo": "17.00",
+            "2do tiempo": "3.00",
+            "No habrá": "1.44"
+        },
+        "¿Cuándo se anotará el gol 5?": {
+            "1er tiempo": "56.00",
+            "2do tiempo": "5.00",
+            "No habrá": "1.16"
+        },
+        "¿Qué equipo anotará?": {
+            "Solo Local": "2.75",
+            "Solo Visitante": "11.00",
+            "Ambos": "1.78",
+            "No habra": "15.00"
+        },
+        "Equipo que anotará el último gol": {
+            "Grêmio": "1.47",
+            "Goiás": "3.00",
+            "No habrá": "15.00"
+        },
+        "Minuto del gol 1 del partido": {
+            "00:00 - 14:59": "3.40",
+            "15:00 - 29:59": "4.00",
+            "Entre los minutos 30:00 y Medio tiempo": "4.20",
+            "45:00 - 59:59": "9.00",
+            "60:00 - 74:59": "11.00",
+            "75:00 - FT": "13.00",
+            "No habrá": "15.00"
+        },
+        "Gol 00:00 - 09:59": {
+            "Sí": "4.50",
+            "No": "1.18"
+        },
+        "Número Exacto de Goles": {
+            "No habrá": "15.00",
+            "1 gol": "5.50",
+            "2 goles": "4.00",
+            "3 goles": "4.00",
+            "4+": "2.80"
+        },
+        "Local - Número exacto de goles": {
+            "No habrá": "6.50",
+            "Exactamente 1": "3.40",
+            "Exactamente 2": "3.25",
+            "Exactamente 3": "4.50",
+            "4+": "6.00"
+        },
+        "Visitante - Número exacto de goles": {
+            "No habrá": "2.40",
+            "Exactamente 1": "2.45",
+            "Exactamente 2": "4.75",
+            "Exactamente 3": "13.00",
+            "4+": "51.00"
+        },
+        "Total de goles (rango adicional)": {
+            "0 o 5+": "3.75",
+            "1 o 4": "2.90",
+            "2 o 3": "2.05"
+        },
+        "Goles totales (rango)": {
+            "0 - 1": "4.20",
+            "2 - 3": "2.05",
+            "4 - 6": "2.90",
+            "7 +": "26.00"
+        },
+        "Rango de total de goles (rango reducido)": {
+            "0-1": "4.20",
+            "2-3": "2.05",
+            "4+": "2.80"
+        },
+        "Local - Rango de goles": {
+            "0": "6.50",
+            "1-2": "1.70",
+            "3+": "2.80"
+        },
+        "Visitante - Rango de goles": {
+            "0": "2.40",
+            "1-2": "1.72",
+            "3+": "11.00"
+        },
+        "Total de goles (3 opciones)": {
+            "más de 2": "1.70",
+            "Exactamente 2": "4.00",
+            "menos de 2": "4.20"
+        },
+        "Total de goles Par/Impar": {
+            "Impar": "1.90",
+            "Par": "1.90"
+        },
+        "Local - Total de goles Par/Impar": {
+            "Impar": "1.90",
+            "Par": "1.83"
+        },
+        "Visitante - Total de goles Par/Impar": {
+            "Impar": "2.20",
+            "Par": "1.63"
+        },
+        "1er tiempo - Número Exacto de Goles": {
+            "No habrá": "3.30",
+            "Exactamente 1": "2.60",
+            "Exactamente 2": "3.60",
+            "3 o más goles": "6.00"
+        },
+        "1er tiempo - Total de goles del local": {
+            "más de 0.5": "1.60",
+            "menos de 0.5": "2.25",
+            "más de 1.5": "4.00",
+            "menos de 1.5": "1.22",
+            "más de 2.5": "12.00",
+            "menos de 2.5": "1.02",
+            "más de 3.5": "46.00",
+            "menos de 3.5": "-",
+            "más de 4.5": "67.00",
+            "menos de 4.5": "-"
+        },
+        "1er tiempo - Total de goles del visitante": {
+            "más de 0.5": "2.80",
+            "menos de 0.5": "1.40",
+            "más de 1.5": "12.00",
+            "menos de 1.5": "1.02",
+            "más de 2.5": "46.00",
+            "menos de 2.5": "-",
+            "más de 3.5": "36.00",
+            "menos de 3.5": "-",
+            "más de 4.5": "26.00",
+            "menos de 4.5": "-"
+        },
+        "2do tiempo - Goles totales del equipo local": {
+            "más de 0.5": "1.40",
+            "menos de 0.5": "2.85",
+            "más de 1.5": "2.90",
+            "menos de 1.5": "1.38",
+            "más de 2.5": "7.50",
+            "menos de 2.5": "1.07",
+            "más de 3.5": "15.00",
+            "menos de 3.5": "-",
+            "más de 4.5": "23.00",
+            "menos de 4.5": "-"
+        },
+        "2do tiempo - Goles totales del equipo visitante": {
+            "más de 0.5": "2.25",
+            "menos de 0.5": "1.60",
+            "más de 1.5": "8.00",
+            "menos de 1.5": "1.06",
+            "más de 2.5": "19.00",
+            "menos de 2.5": "-",
+            "más de 3.5": "26.00",
+            "menos de 3.5": "-",
+            "más de 4.5": "26.00",
+            "menos de 4.5": "-"
+        },
+        "1er tiempo - Rango de goles": {
+            "0 - 1": "1.50",
+            "2 - 3": "2.70",
+            "4+": "17.00"
+        },
+        "1er tiempo - Total de goles (3 opciones)": {
+            "más de 1": "2.55",
+            "Exactamente 1": "2.60",
+            "menos de 1": "3.30"
+        },
+        "2do tiempo - Total de goles (3 opciones)": {
+            "más de 1": "1.90",
+            "Exactamente 1": "2.85",
+            "menos de 1": "4.50"
+        },
+        "1er tiempo - Equipo que anotará gol 1": {
+            "Grêmio": "1.87",
+            "Goiás": "4.00",
+            "No habrá": "3.30"
+        },
+        "2do tiempo - Equipo que anotará gol 1": {
+            "Grêmio": "1.70",
+            "Goiás": "3.50",
+            "No habrá": "4.50"
+        },
+        "1er gol del equipo local": {
+            "1er tiempo": "1.60",
+            "No habrá": "6.50",
+            "2do tiempo": "3.10"
+        },
+        "Visitante - Primer gol": {
+            "1er tiempo": "2.80",
+            "No habrá": "2.40",
+            "2do tiempo": "3.10"
+        }
+    },
+    "Hándicaps": {},
+    "Tiempos": {
+        "1er tiempo - Total de goles": {
+            "más de 0.5": "1.33",
+            "menos de 0.5": "3.30",
+            "más de 1.5": "2.55",
+            "menos de 1.5": "1.50",
+            "más de 2.5": "6.00",
+            "menos de 2.5": "1.11",
+            "más de 3.5": "17.00",
+            "menos de 3.5": "-"
+        },
+        "Ambos equipos anotan en cada tiempo": {
+            "Sí": "11.00",
+            "No": "1.02"
+        },
+        "2do tiempo - Total de goles": {
+            "más de 0.5": "1.18",
+            "menos de 0.5": "4.50",
+            "más de 1.5": "1.90",
+            "menos de 1.5": "1.83",
+            "más de 2.5": "3.75",
+            "menos de 2.5": "1.25",
+            "más de 3.5": "8.50",
+            "menos de 3.5": "1.05",
+            "más de 4.5": "17.00",
+            "menos de 4.5": "-"
+        },
+        "1er tiempo - Ambos equipos anotan": {
+            "Sí": "4.33",
+            "No": "1.20"
+        },
+        "2do tiempo - Ambos equipos anotan": {
+            "Sí": "3.10",
+            "No": "1.33"
+        },
+        "1er tiempo - Marcador exacto": {
+            "1-0": "3.75",
+            "0-0": "3.30",
+            "0-1": "8.00",
+            "2-0": "5.50",
+            "1-1": "6.00"
+        },
+        "Resultado del 1er tiempo": {
+            "Grêmio": "2.10",
+            "Empate": "2.40",
+            "Goiás": "5.50"
+        },
+        "Resultado del 2do tiempo": {
+            "Grêmio": "1.90",
+            "Empate": "2.85",
+            "Goiás": "5.00"
+        },
+        "Ganador del primer tiempo + 1er tiempo Total de goles 1.5": {
+            "Local y Más": "4.33",
+            "Empate y Más": "7.50",
+            "Visita y Más": "17.00",
+            "Local y Menos": "3.75",
+            "Empate y Menos": "3.30",
+            "Visita y Menos": "8.00"
+        },
+        "Ganador del primer tiempo + 1er tiempo Total de goles 2.5": {
+            "Local y Más": "8.00",
+            "Empate y Más": "67.00",
+            "Visita y Más": "29.00",
+            "Local y Menos": "2.65",
+            "Empate y Menos": "2.45",
+            "Visita y Menos": "6.50"
+        },
+        "Ganador del primer tiempo + 1er tiempo Total de goles 3.5": {
+            "Local y Más": "29.00",
+            "Empate y Más": "67.00",
+            "Visita y Más": "126.00",
+            "Local y Menos": "2.20",
+            "Empate y Menos": "2.45",
+            "Visita y Menos": "5.50"
+        },
+        "1er tiempo 1X2 + Ambos equipos anotan": {
+            "Local y Sí": "13.00",
+            "Local y No": "2.40",
+            "Empate + Sí": "7.50",
+            "Empate + No": "3.30",
+            "Visita y Sí": "34.00",
+            "Visita y No": "6.50"
+        },
+        "Tiempo con más goles": {
+            "1er tiempo": "3.10",
+            "Igual": "3.75",
+            "2do tiempo": "2.05"
+        },
+        "1er tiempo - Total de goles Par/Impar": {
+            "Impar": "2.05",
+            "Par": "1.75"
+        },
+        "1er tiempo - Número Exacto de Goles": {
+            "No habrá": "3.30",
+            "Exactamente 1": "2.60",
+            "Exactamente 2": "3.60",
+            "3 o más goles": "6.00"
+        },
+        "1er tiempo - Total de goles del local": {
+            "más de 0.5": "1.60",
+            "menos de 0.5": "2.25",
+            "más de 1.5": "4.00",
+            "menos de 1.5": "1.22",
+            "más de 2.5": "12.00",
+            "menos de 2.5": "1.02",
+            "más de 3.5": "46.00",
+            "menos de 3.5": "-",
+            "más de 4.5": "67.00",
+            "menos de 4.5": "-"
+        },
+        "1er tiempo - Total de goles del visitante": {
+            "más de 0.5": "2.80",
+            "menos de 0.5": "1.40",
+            "más de 1.5": "12.00",
+            "menos de 1.5": "1.02",
+            "más de 2.5": "46.00",
+            "menos de 2.5": "-",
+            "más de 3.5": "36.00",
+            "menos de 3.5": "-",
+            "más de 4.5": "26.00",
+            "menos de 4.5": "-"
+        },
+        "2do tiempo - Goles totales del equipo local": {
+            "más de 0.5": "1.40",
+            "menos de 0.5": "2.85",
+            "más de 1.5": "2.90",
+            "menos de 1.5": "1.38",
+            "más de 2.5": "7.50",
+            "menos de 2.5": "1.07",
+            "más de 3.5": "15.00",
+            "menos de 3.5": "-",
+            "más de 4.5": "23.00",
+            "menos de 4.5": "-"
+        },
+        "2do tiempo - Goles totales del equipo visitante": {
+            "más de 0.5": "2.25",
+            "menos de 0.5": "1.60",
+            "más de 1.5": "8.00",
+            "menos de 1.5": "1.06",
+            "más de 2.5": "19.00",
+            "menos de 2.5": "-",
+            "más de 3.5": "26.00",
+            "menos de 3.5": "-",
+            "más de 4.5": "26.00",
+            "menos de 4.5": "-"
+        },
+        "1er tiempo - Rango de goles": {
+            "0 - 1": "1.50",
+            "2 - 3": "2.70",
+            "4+": "17.00"
+        },
+        "1er tiempo - Total de goles (3 opciones)": {
+            "más de 1": "2.55",
+            "Exactamente 1": "2.60",
+            "menos de 1": "3.30"
+        },
+        "2do tiempo - Total de goles (3 opciones)": {
+            "más de 1": "1.90",
+            "Exactamente 1": "2.85",
+            "menos de 1": "4.50"
+        },
+        "1er tiempo - Equipo que anotará gol 1": {
+            "Grêmio": "1.87",
+            "Goiás": "4.00",
+            "No habrá": "3.30"
+        },
+        "2do tiempo - Equipo que anotará gol 1": {
+            "Grêmio": "1.68",
+            "Goiás": "3.60",
+            "No habrá": "4.50"
+        },
+        "1er tiempo - Total de tiros de esquina": {
+            "más de 5.5": "2.20",
+            "menos de 5.5": "1.63"
+        },
+        "Local gana 1er o 2do tiempo": {
+            "Sí": "1.30",
+            "No": "3.30"
+        },
+        "Visitante gana 1er o 2do tiempo": {
+            "Sí": "3.10",
+            "No": "1.33"
+        },
+        "Local ganará ambos tiempos": {
+            "Sí": "3.75",
+            "No": "1.25"
+        },
+        "Visitante ganará ambos tiempos": {
+            "Sí": "15.00",
+            "No": "-"
+        },
+        "1er gol del equipo local": {
+            "1er tiempo": "1.60",
+            "No habrá": "7.00",
+            "2do tiempo": "3.10"
+        },
+        "Visitante - Primer gol": {
+            "1er tiempo": "2.80",
+            "No habrá": "2.40",
+            "2do tiempo": "3.10"
+        }
+    },
+    "Marcador": {
+        "Marcador exacto": {
+            "1-0": "7.50",
+            "0-0": "15.00",
+            "0-1": "17.00",
+            "2-0": "7.50",
+            "1-1": "8.00"
+        },
+        "1er tiempo - Marcador exacto": {
+            "1-0": "3.75",
+            "0-0": "3.30",
+            "0-1": "8.00",
+            "2-0": "5.50",
+            "1-1": "6.00"
+        }
+    },
+    "Tiros de esquina": {
+        "Total de tiros de esquina": {
+            "más de 10.5": "1.80",
+            "menos de 10.5": "1.95"
+        },
+        "1er tiempo - Total de tiros de esquina": {
+            "más de 5.5": "2.20",
+            "menos de 5.5": "1.63"
+        },
+        "Visitante - Total de tiros de esquina": {
+            "más de 4.5": "2.20",
+            "menos de 4.5": "1.60"
+        },
+        "Local - Total de tiros de esquina": {
+            "más de 6.5": "1.87",
+            "menos de 6.5": "1.83"
+        }
+    },
+    "Tarjetas": {
+        "Número de tarjetas": {
+            "más de 5.5": "1.95",
+            "menos de 5.5": "1.78"
+        },
+        "Local - Número de tarjetas": {
+            "más de 2.5": "1.95",
+            "menos de 2.5": "1.78"
+        },
+        "Visitante - Número de tarjetas": {
+            "más de 2.5": "1.55",
+            "menos de 2.5": "2.33"
+        }
+    },
+    "Eventos del partido": {
+        "Ambos equipos anotan": {
+            "Sí": "1.78",
+            "No": "2.00"
+        },
+        "Gol en ambos tiempos": {
+            "Sí": "1.62",
+            "No": "2.20"
+        },
+        "Ambos equipos anotan en cada tiempo": {
+            "Sí": "11.00",
+            "No": "1.02"
+        },
+        "Ambos equipos anotan + Sin empate": {
+            "Sí": "2.45",
+            "No": "1.52"
+        },
+        "1er tiempo - Ambos equipos anotan": {
+            "Sí": "4.20",
+            "No": "1.20"
+        },
+        "2do tiempo - Ambos equipos anotan": {
+            "Sí": "3.10",
+            "No": "1.33"
+        },
+        "1er tiempo 1X2 + Ambos equipos anotan": {
+            "Local y Sí": "12.00",
+            "Local y No": "2.40",
+            "Empate + Sí": "7.50",
+            "Empate + No": "3.30",
+            "Visita y Sí": "34.00",
+            "Visita y No": "7.00"
+        },
+        "Ganador del partido + Total de goles 1.5": {
+            "Local y Más": "1.80",
+            "Empate y Más": "5.50",
+            "Visita y Más": "8.00",
+            "Local y Menos": "7.50",
+            "Empate y Menos": "15.00",
+            "Visita y Menos": "17.00"
+        },
+        "Ganador del partido + Total de goles 2.5": {
+            "Local y Más": "2.20",
+            "Empate y Más": "13.00",
+            "Visita y Más": "9.50",
+            "Local y Menos": "4.00",
+            "Empate y Menos": "5.50",
+            "Visita y Menos": "13.00"
+        },
+        "Ganador del partido + Total de goles 3.5": {
+            "Local y Más": "3.60",
+            "Empate y Más": "13.00",
+            "Visita y Más": "21.00",
+            "Local y Menos": "2.40",
+            "Empate y Menos": "5.50",
+            "Visita y Menos": "7.00"
+        },
+        "Ganador del partido + Ambos equipos anotan": {
+            "Local y Sí": "3.10",
+            "Local y No": "2.75",
+            "Empate + Sí": "5.50",
+            "Empate + No": "15.00",
+            "Visita y Sí": "11.00",
+            "Visita y No": "12.00"
+        },
+        "Ambos equipos anotan + Total de goles 1.5": {
+            "Sí y más de": "1.78",
+            "Sí y menos de": "-",
+            "No y Más de": "3.50",
+            "No y Menos de": "4.33"
+        },
+        "Ambos equipos anotan + Total de goles 2.5": {
+            "Sí y más de": "2.15",
+            "Sí y menos de": "8.00",
+            "No y Más de": "6.00",
+            "No y Menos de": "2.80"
+        },
+        "Gana local y no recibe goles": {
+            "Sí": "2.75",
+            "No": "1.44"
+        },
+        "Visitante gana y no recibe goles": {
+            "Sí": "12.00",
+            "No": "1.03"
+        },
+        "Local - Valla invicta": {
+            "Sí": "2.40",
+            "No": "1.57"
+        },
+        "Visitante - Valla invicta": {
+            "Sí": "7.00",
+            "No": "1.10"
+        },
+        "Equipos que anotarán goles": {
+            "Ninguno": "15.00",
+            "1": "2.25",
+            "Ambos": "1.78"
+        },
+        "Equipo que anotará el último gol": {
+            "Grêmio": "1.45",
+            "Goiás": "3.00",
+            "No habrá": "15.00"
+        },
+        "Anotará el equipo local": {
+            "Sí": "1.10",
+            "No": "7.00"
+        },
+        "Visitante anotará": {
+            "Sí": "1.57",
+            "No": "2.40"
+        },
+        "Local anota en ambos tiempos": {
+            "Sí": "2.25",
+            "No": "1.60"
+        },
+        "Visitante anota en ambos tiempos": {
+            "Sí": "6.00",
+            "No": "1.11"
+        },
+        "Local gana 1er o 2do tiempo": {
+            "Sí": "1.30",
+            "No": "3.30"
+        },
+        "Visitante gana 1er o 2do tiempo": {
+            "Sí": "3.10",
+            "No": "1.33"
+        },
+        "Local ganará ambos tiempos": {
+            "Sí": "3.75",
+            "No": "1.25"
+        },
+        "Visitante ganará ambos tiempos": {
+            "Sí": "15.00",
+            "No": "-"
+        },
+        "Local gana volteando el partido": {
+            "Sí": "8.00",
+            "No": "1.06"
+        },
+        "Visitante gana volteando el partido": {
+            "Sí": "15.00",
+            "No": "-"
+        },
+        "Márgen del triunfo (5 opciones)": {
+            "Equipo local por un gol": "3.50",
+            "Gana el equipo local por dos goles o más": "2.40",
+            "Equipo visitante por un gol": "7.50",
+            "Gana el equipo visitante por dos goles o más": "15.00",
+            "Empate": "4.20"
+        },
+        "Márgen de Victoria - 10 opciones": {
+            "Equipo local por un gol": "3.50",
+            "Equipo local por dos goles": "4.33",
+            "Equipo local por tres goles": "7.00",
+            "Equipo local por cuatro goles": "10.00",
+            "Equipo visitante por un gol": "7.50"
+        },
+        "Margen de victoria - Local o Visitante": {
+            "Empate": "4.20",
+            "Exactamente 1": "2.60",
+            "Exactamente 2": "3.75",
+            "3 o más goles": "4.50"
+        }
+    },
+    "Intervalos": {
+        "Minuto del gol 1 del partido": {
+            "00:00 - 14:59": "3.40",
+            "15:00 - 29:59": "4.00",
+            "Entre los minutos 30:00 y Medio tiempo": "4.20",
+            "45:00 - 59:59": "9.00",
+            "60:00 - 74:59": "11.00",
+            "75:00 - FT": "13.00",
+            "No habrá": "15.00"
+        },
+        "Minuto del primer gol del local": {
+            "00:00 - 14:59": "4.50",
+            "15:00 - 29:59": "4.75",
+            "Entre los minutos 30:00 y Medio tiempo": "4.50",
+            "45:00 - 59:59": "8.00",
+            "60:00 - 74:59": "9.50",
+            "75:00 - FT": "9.00",
+            "No habrá": "7.00"
+        },
+        "Minuto del primer gol del visitante": {
+            "00:00 - 14:59": "9.00",
+            "15:00 - 29:59": "8.00",
+            "Entre los minutos 30:00 y Medio tiempo": "6.50",
+            "45:00 - 59:59": "10.00",
+            "60:00 - 74:59": "10.00",
+            "75:00 - FT": "7.50",
+            "No habrá": "2.40"
+        },
+        "Gol 00:00 - 09:59": {
+            "Sí": "4.50",
+            "No": "1.18"
+        }
+    },
+    "Carreras": {
+        "Primer equipo en anotar 2 goles": {
+            "Grêmio": "1.72",
+            "Goiás": "5.50",
+            "No habra": "3.00"
+        },
+        "Primer equipo en anotar 3 goles": {
+            "Grêmio": "2.80",
+            "Goiás": "15.00",
+            "No habra": "1.50"
+        }
+    }
+}

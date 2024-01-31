@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Sep 19 20:53:50 2023
+Created on Tue Nov  7 20:07:49 2023
 
 @author: edzon
 """
@@ -15,13 +15,18 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
+from scraper import Scraper
 
 import json
 import time
 import sys
 
-
-url = 'https://www.betsson.com/pe/apuestas-deportivas/futbol?eventId=f-2d354PlPfUiuhNxt-Ezn9Q&eti=0&fs=true'
+class Bettson(Scraper):
+    def __init__():
+        pass
+    
+    def extract(url):
+url = 'https://www.betsson.com/pe/apuestas-deportivas/futbol?bte=true&tab=competitionsAndLeagues&eventId=f-eGIT6KdbmEmXxbZsPZpJOw&eti=0&fs=true'
 #url = 'https://www.betsson.com/pe/apuestas-deportivas/futbol?eventId=f-Sd3_UV2wBUKqQvJJUT4tNQ&tab=competitionsAndLeagues&eti=0&fs=true&mtg=3'
 
 options = Options()
@@ -41,12 +46,11 @@ match_name = teams[0].text + ' vs ' + teams[1].text
 # Get active bet option
 # url + &mtg=[bet_ops_cod]
 soup = BeautifulSoup(driver.page_source, "lxml")
-# mtg_elements = soup.select("obg-tabs.obg-tabs.ng-star-inserted div.obg-tabs-content.ng-star-inserted obg-tab-label.obg-tab-label.ng-star-inserted")
-mtg_elements = soup.select("div.obg-m-event-market-tabs-tab-container obg-tab-label")
+mtg_elements = soup.select("obg-tabs.obg-tabs.ng-star-inserted div.obg-tabs-content.ng-star-inserted obg-tab-label.obg-tab-label.ng-star-inserted")
 mtg_list = {}
 
-for i in range(4, len(mtg_elements)):
-#for i in range(4, 5):
+#for i in range(4, len(mtg_elements)):
+for i in range(4, 5):
     try:
         element = mtg_elements[i].select("div.ng-star-inserted span.ng-star-inserted")[0]
         mtg_name = element.text
@@ -99,14 +103,9 @@ for mtg_id, mtg_name in mtg_list.items():
     
     # Get all match betting sections
     match_betting[mtg_name] = market
-
+    
+# Save to json file
+json_object = json.dumps(match_betting, indent=4, ensure_ascii=False)
+        
 # Quit browser
 driver.quit()
-    
-# Serialize json
-json_object = json.dumps(match_betting, indent=4, ensure_ascii=False)
-
-# Save to json file      
-filename = "_".join(match_name.split(" ")) + ".json"
-with open("./data/raw/" + filename, "w") as outfile:
-    outfile.write(json_object)
