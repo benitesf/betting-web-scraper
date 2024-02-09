@@ -1,12 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Sep 19 20:53:50 2023
-
-@author: edzon
-"""
-
-import requests
-
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -21,7 +13,7 @@ import time
 import sys
 
 
-url = 'https://www.betsson.com/pe/apuestas-deportivas/futbol?eventId=f-2d354PlPfUiuhNxt-Ezn9Q&eti=0&fs=true'
+url = 'https://www.betsson.com/pe/apuestas-deportivas/buscar?eventId=f-wvYOM0drCEa2Ivzrk-2wBQ&eti=0&fs=true'
 #url = 'https://www.betsson.com/pe/apuestas-deportivas/futbol?eventId=f-Sd3_UV2wBUKqQvJJUT4tNQ&tab=competitionsAndLeagues&eti=0&fs=true&mtg=3'
 
 options = Options()
@@ -35,35 +27,49 @@ driver.get(url)
 driver.implicitly_wait(3)
 
 # Get match football team's name
-teams = driver.find_elements(By.XPATH, "//div[@test-id='event-page.participants']//span[@class='ng-star-inserted']")
-match_name = teams[0].text + ' vs ' + teams[1].text
+match_container_str = "//div[@test-id='event-page.participants']//span[@class='ng-star-inserted']"
+match_container = driver.find_elements(By.XPATH, match_container_str)
+local = match_container[0].text
+visit = match_container[1].text
 
-# Get active bet option
-# url + &mtg=[bet_ops_cod]
+print("#########################")
+print("Local: " + local)
+print("Visita: " + visit)
+print("#########################\n\n")
+
 soup = BeautifulSoup(driver.page_source, "lxml")
-# mtg_elements = soup.select("obg-tabs.obg-tabs.ng-star-inserted div.obg-tabs-content.ng-star-inserted obg-tab-label.obg-tab-label.ng-star-inserted")
-mtg_elements = soup.select("div.obg-m-event-market-tabs-tab-container obg-tab-label")
-mtg_list = {}
 
-for i in range(4, len(mtg_elements)):
-#for i in range(4, 5):
+# Get betting markets
+# url + &mtg=[bet_ops_cod]
+market_container_str = "div.obg-m-event-market-tabs-tab-container obg-tab-label"
+market_container = soup.select(market_container_str)
+print("nº markets: " + str(len(market_container)))
+markets = {}
+
+market_name_container_str = "div.ng-star-inserted span.label-text"
+
+for i in range(4, len(market_container)):
     try:
-        element = mtg_elements[i].select("div.ng-star-inserted span.ng-star-inserted")[0]
-        mtg_name = element.text
-        mtg_id = int(mtg_elements[i]['test-id'])
-        mtg_list[mtg_id] = mtg_name
-    except:
+        market_name = market_container[i].select(market_name_container_str)[0].text        
+        market_id = int(market_container[i]['test-id'])
+        markets[market_id] = market_name
+    except Exception:        
         print(f"Error in position {i}")
 
-match_betting = {}
+print(markets)
 
-# Iterate over each mtg id
-for mtg_id, mtg_name in mtg_list.items():
-    driver.get(url + f"&mtg={mtg_id}")
+match_odds = {}
+# markets = {4: "Goles"}
+
+# Iterate over markets
+for market_id, market_name in markets.items():
+    print(f"\nMarket: {market_name}")
+    
+    driver.get(url + f"&mtg={market_id}")
     driver.implicitly_wait(3)
     
     #active = driver.find_element(By.XPATH, "//div[@class='obg-tabs-content ng-star-inserted']//obg-tab-label[@class='obg-tab-label ng-star-inserted active']//div[@class='ng-star-inserted']//span[@class='ng-star-inserted']").text        
-    market = {}
+    market_odds = {}
     
     # Scrolling
     wait = WebDriverWait(driver, 0.3)
@@ -73,40 +79,64 @@ for mtg_id, mtg_name in mtg_list.items():
     while i < j:
         try:
             element = wait.until(EC.visibility_of_element_located((By.XPATH, f"//div[@test-id='{i}']")))
-            element.location_once_scrolled_into_view        
-            time.sleep(0.2)
+            element.location_once_scrolled_into_view
+            # time.sleep(0.2)
             
             try:
                 s = driver.find_element(By.XPATH, f"//div[@test-id='{i}']//span[@test-id='odds']").text            
-            except:
+            except Exception:
+                print(f"Expanding...")
                 driver.find_element(By.XPATH, f"//div[@test-id='{i}']//span[@class='ico-chevron-down obg-m-event-market-group-toggle-icon']").click()
-                #print("Expanded")
+                time.sleep(0.1)
             
             # Extract item header
-            header = driver.find_element(By.XPATH, f"//div[@test-id='{i}']//span[@class='obg-m-event-market-group-header-name ng-star-inserted']").text
+            try:
+                try:
+                    odd_header = driver.find_element(By.XPATH, f"//div[@test-id='{i}']//span[@class='obg-m-event-market-group-header-name ng-star-inserted']").text
+                except Exception:
+                    print("[INF] Looking for submarkets header")
+                    odd_header = driver.find_element(By.XPATH, f"//div[@test-id='{i}']//span[@class='obg-m-event-market-submarkets-group-header-name']").text
+            except Exception:
+                print(f"[ERR] Header not found. id: {i}")
+                break
+            
             # Extract odds
-            odd_elements = driver.find_elements(By.XPATH, f"//div[@test-id='{i}']//obg-selection-container[@test-id='event.market-selection']")
-            odds_dict = {}
-            for odd in odd_elements:
-                odd_name = odd.find_element(By.XPATH, ".//div[@class='obg-selection-content-label-wrapper']//span[@class='obg-selection-content-label ng-star-inserted']").text
-                odd_value = odd.find_element(By.XPATH, ".//obg-numeric-change[@class='obg-numeric-change ng-star-inserted']//span[@test-id='odds']").text
-                odds_dict[odd_name] = odd_value
+            try:
+                odds_container = driver.find_elements(By.XPATH, f"//div[@test-id='{i}']//obg-selection-container[@test-id='event.market-selection']")
+            except Exception:
+                print(f"[ERR] Container not found. id: {i}")
+                break
+            
+            odds = {}
+            for odd in odds_container:
+                try:
+                    odd_name = odd.find_element(By.XPATH, ".//div[@class='obg-selection-content-label-wrapper']//span[@class='obg-selection-content-label ng-star-inserted']").text
+                except Exception:
+                    print(f"[ERR] Odd name not found. id: {i}")
+                    break
+                try:
+                    odd_value = odd.find_element(By.XPATH, ".//obg-numeric-change[@class='obg-numeric-change ng-star-inserted']//span[@test-id='odds']").text
+                except Exception:
+                    print(f"[ERR] Odds not found. id: {i}")
+                    break
+                odds[odd_name] = odd_value
                 
-            market[header] = odds_dict    
+            market_odds[odd_header] = odds
             i += 1
-        except:        
+        except Exception as ex:
+            print(ex)
+            print("No more odds..")
             break
     
-    # Get all match betting sections
-    match_betting[mtg_name] = market
+    match_odds[market_name] = market_odds
 
 # Quit browser
 driver.quit()
-    
-# Serialize json
-json_object = json.dumps(match_betting, indent=4, ensure_ascii=False)
 
-# Save to json file      
-filename = "_".join(match_name.split(" ")) + ".json"
+# Serialize json
+json_object = json.dumps(match_odds, indent=4, ensure_ascii=False)
+
+# Save to json file
+filename = local + "_vs_" + visit + ".json"
 with open("./data/raw/" + filename, "w") as outfile:
     outfile.write(json_object)
